@@ -11,20 +11,16 @@ export const HeaderLayout = styled.div`
 `;
 
 export const Logo = styled.div`
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 13vw;
 `;
 
 export const LogoImg = styled.img`
-  width: 13vw;
+  width: 100%;
 `;
 
 // Nav
 export const NavLayout = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 5vh;
   display: flex;
   justify-content: center;
@@ -43,13 +39,10 @@ export const NavItem = styled.strong`
   cursor: pointer;
 
   &:hover {
-    color: rgb(31, 158, 31);
+    // &는 현재 선택자를 의미하는 문법
+    color: ${colors.green};
     border-bottom: 3px solid ${colors.green};
     cursor: pointer;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 65%;
   }
 `;
 
